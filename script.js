@@ -168,19 +168,19 @@ function displayPrayerTimes(city = "cairo") {
 const surahAudioMap = {
     fatiha: {
         name: "سورة الفاتحة",
-        src: "https://download.quranicaudio.com/quran/abdul_baset/mujawwad/001.mp3"
+        src: "001.mp3"
     },
     ikhlas: {
         name: "سورة الإخلاص",
-        src: "https://download.quranicaudio.com/quran/abdul_baset/mujawwad/112.mp3"
+        src: "112.mp3"
     },
     falaq: {
         name: "سورة الفلق",
-        src: "https://download.quranicaudio.com/quran/abdul_baset/mujawwad/113.mp3"
+        src: "113.mp3"
     },
     nas: {
         name: "سورة الناس",
-        src: "https://download.quranicaudio.com/quran/abdul_baset/mujawwad/114.mp3"
+        src: "114.mp3"
     }
 };
 
