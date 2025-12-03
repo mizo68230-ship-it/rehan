@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ريحــان - المنصة الإسلامية الشاملة</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- ملف التنسيقات الخارجي -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- شريط التنقل (Navbar) -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 shadow-sm fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-primary" href="index.html">
+            <!-- اللوجو الجديد -->
+            <img src="rehan-logo.png" alt="شعار ريحان">
+            ريحــان
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">الصفحة الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#prayer-times">الصلاة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#quran-player">
+                القرآن
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">
+                التفسير
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="privacy.html">
+                سياسة الخصوصية
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="ابحث في القرآن، الأحاديث..." aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">بحث</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- القسم الرئيسي -->
+    <main class="pt-5">
+        <!-- قسم البطل (Hero) -->
+        <section class="hero-section" id="home">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="hero-title">مرحبًا بكم في ريحــان</h1>
+                        <p class="hero-subtitle">
+                            منصتكم الإسلامية الشاملة التي تجمع بين العلم النافع، الإلهام الروحي، والمحتوى الموثوق
+                            لتعزيز صلتكم بالدين والحياة الإسلامية. نقدم لكم القرآن الكريم، مواقيت الصلاة، التفسير، والأدعية في مكان واحد.
+                        </p>
+                        <a href="#features" class="btn btn-primary btn-lg">
+                            <i class="fas fa-star me-2"></i>استكشف الخدمات
+                        </a>
+                        <a href="#prayer-times" class="btn btn-outline-primary btn-lg me-3">
+                            <i class="fas fa-clock me-2"></i>أوقات الصلاة
+                        </a>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" class="img-fluid rounded-3 shadow-lg" alt="مصلي في المسجد">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم المميزات -->
+        <section id="features" class="py-5">
+            <div class="container">
+                <h2 class="section-title">خدماتنا المميزة</h2>
+                <p class="text-center mb-5 fs-5 text-muted">نقدم لكم مجموعة من الخدمات الإسلامية المتنوعة والمفيدة</p>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-card">
+                            <div class="feature-icon text-center">
+                                <i class="fas fa-book-quran"></i>
+                            </div>
+                            <h3 class="feature-title">القرآن الكريم</h3>
+                            <p>استمع لتلاوات جميلة من سور مختارة مع إمكانية تغيير السورة والتحكم في المشغل.</p>
+                            <a href="#quran-player" class="btn btn-outline-primary mt-3">افتح المشغل</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-card">
+                            <div class="feature-icon text-center">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3 class="feature-title">أوقات الصلاة</h3>
+                            <p>مواقيت الصلاة لعدد من محافظات مصر مع واجهة سهلة وواضحة.</p>
+                            <a href="#prayer-times" class="btn btn-outline-primary mt-3">عرض الأوقات</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-card">
+                            <div class="feature-icon text-center">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <h3 class="feature-title">محتوى تعليمي</h3>
+                            <p>محتوى إسلامي منوّع يمكن تطويره لاحقًا ليشمل دروسًا وشروحات مفصّلة.</p>
+                            <a href="#home" class="btn btn-outline-primary mt-3">تعرف أكثر</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-card">
+                            <div class="feature-icon text-center">
+                                <i class="fas fa-bead"></i>
+                            </div>
+                            <h3 class="feature-title">عداد تسبيح</h3>
+                            <p>أداة تفاعلية بسيطة للتسبيح والذكر مع عداد يمكن تصفيره بسهولة.</p>
+                            <a href="#tasbeeh" class="btn btn-outline-primary mt-3">ابدأ التسبيح</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم أوقات الصلاة -->
+        <section id="prayer-times" class="prayer-section">
+            <div class="container">
+                <h2 class="section-title">أوقات الصلاة</h2>
+                <p class="text-center mb-5 fs-5 text-muted">اختر المحافظة لعرض مواقيت الصلاة التقريبية</p>
+                
+                <!-- اختيار المحافظة -->
+                <div class="city-selector">
+                    <select id="citySelect" class="form-select text-center" aria-label="اختر المحافظة">
+                        <option value="cairo" selected>القاهرة</option>
+                        <option value="giza">الجيزة</option>
+                        <option value="alex">الإسكندرية</option>
+                        <option value="mansoura">الدقهلية (المنصورة)</option>
+                        <option value="tanta">الغربية (طنطا)</option>
+                        <option value="zagazig">الشرقية (الزقازيق)</option>
+                        <option value="minya">المنيا</option>
+                        <option value="asyut">أسيوط</option>
+                        <option value="aswan">أسوان</option>
+                    </select>
+                </div>
+                
+                <!-- عرض التاريخ -->
+                <div class="date-display">
+                    <span class="hijri-date" id="hijriDate">15 رمضان 1445 هـ</span>
+                    <span class="mx-3">|</span>
+                    <span class="gregorian-date" id="gregorianDate">26 مارس 2024 م</span>
+                </div>
+                
+                <!-- أوقات الصلاة -->
+                <div class="prayer-times-container">
+                    <div class="row g-4" id="prayerTimesContainer">
+                        <!-- سيتم تعبئة أوقات الصلاة بواسطة JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم مشغل القرآن -->
+        <section id="quran-player" class="py-5 quran-player-section">
+            <div class="container">
+                <h2 class="section-title">مشغل القرآن الكريم</h2>
+                <p class="text-center mb-4 fs-5 text-muted">اختر سورة واستمع لتلاوة مميزة</p>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="quran-player-card">
+                            <div class="mb-3">
+                                <label for="surahSelect" class="form-label fw-bold">اختر السورة</label>
+                                <select id="surahSelect" class="form-select text-center">
+                                    <option value="fatiha" selected>سورة الفاتحة</option>
+                                    <option value="ikhlas">سورة الإخلاص</option>
+                                    <option value="falaq">سورة الفلق</option>
+                                    <option value="nas">سورة الناس</option>
+                                </select>
+                            </div>
+
+                            <div class="quran-audio-wrapper text-center">
+                                <p class="mb-2">التلاوة الحالية: <span id="currentSurahName">سورة الفاتحة</span></p>
+                                <audio id="quranAudio" controls>
+                                    <!-- روابط صوت تجريبية – يمكنك تغييرها كما تريد -->
+                                    <source id="quranSource" src="https://download.quranicaudio.com/quran/abdul_baset/mujawwad/001.mp3" type="audio/mpeg">
+                                    المتصفح لا يدعم تشغيل الصوت.
+                                </audio>
+                            </div>
+
+                            <div class="text-center mt-3">
+                                <button id="playBtn" class="btn btn-primary me-2">
+                                    <i class="fas fa-play"></i> تشغيل
+                                </button>
+                                <button id="pauseBtn" class="btn btn-outline-primary">
+                                    <i class="fas fa-pause"></i> إيقاف مؤقت
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم عداد التسبيح -->
+        <section id="tasbeeh" class="py-5 tasbeeh-section">
+            <div class="container">
+                <h2 class="section-title">عداد التسبيح</h2>
+                <p class="text-center mb-4 fs-5 text-muted">"سُبْحَانَ اللَّهِ، وَالْحَمْدُ لِلَّهِ، وَلَا إِلَهَ إِلَّا اللَّهُ، وَاللَّهُ أَكْبَرُ"</p>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="tasbeeh-card text-center">
+                            <div class="tasbeeh-count" id="tasbeehCount">0</div>
+                            <div class="mb-3 text-muted">اضغط على زر التسبيح للزيادة</div>
+                            <button id="tasbeehBtn" class="btn btn-primary btn-lg mb-2">
+                                <i class="fas fa-bead me-2"></i> تسبيح
+                            </button>
+                            <br>
+                            <button id="resetTasbeehBtn" class="btn btn-outline-secondary btn-sm">
+                                تصفير العداد
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم آية اليوم -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="section-title">آية اليوم</h2>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="quran-verse">
+                            "إِنَّمَا يَعْمُرُ مَسَاجِدَ اللَّهِ مَنْ آمَنَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ
+                            وَأَقَامَ الصَّلَاةَ وَآتَى الزَّكَاةَ وَلَمْ يَخْشَ إِلَّا اللَّهَ ۖ
+                            فَعَسَىٰ أُولَٰئِكَ أَنْ يَكُونُوا مِنَ الْمُهْتَدِينَ"
+                            <div class="verse-reference">سورة التوبة - الآية 18</div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <a href="#quran-player" class="btn btn-primary btn-lg">
+                                <i class="fas fa-play-circle me-2"></i>استمع للقرآن الكريم
+                            </a>
+                            <a href="#features" class="btn btn-outline-primary btn-lg me-3">
+                                <i class="fas fa-book-open me-2"></i>اقرأ المزيد من المحتوى
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الكعبة المشرفة -->
+        <section class="kaaba-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="kaaba-title">الكعبة المشرفة</h2>
+                        <p class="kaaba-text">
+                            قبلة المسلمين في صلواتهم، والحرم الذي يجتمع فيه الحجاج من كل فج عميق.
+                            أول بيت وضع للناس، ومهوى أفئدة المسلمين في مشارق الأرض ومغاربها.
+                        </p>
+                        <p class="kaaba-text">
+                            زيارة الكعبة والحج إليها من أركان الإسلام الخمسة، وهي رمز وحدة المسلمين وتوحيدهم لرب العالمين.
+                        </p>
+                        <a href="#" class="btn btn-light btn-lg">
+                            <i class="fas fa-hiking me-2"></i>تعرف أكثر عن الحج
+                        </a>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" class="img-fluid rounded-3 shadow" alt="الكعبة المشرفة">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- معلومات المصمم -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="designer-info">
+                            <h3 class="designer-title text-center">
+                                <i class="fas fa-palette me-2"></i>معلومات المصمم والمطور
+                            </h3>
+                            <div class="text-center mb-4">
+                                <div class="designer-contact justify-content-center">
+                                    <i class="fas fa-user"></i>
+                                    <span>المهندس: محمد أحمد</span>
+                                </div>
+                                <div class="designer-contact justify-content-center">
+                                    <i class="fas fa-id-card"></i>
+                                    <span>ID: 2420965</span>
+                                </div>
+                                <div class="designer-contact justify-content-center">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>واتساب: +201069187620</span>
+                                </div>
+                                <div class="designer-contact justify-content-center">
+                                    <i class="fas fa-swatchbook"></i>
+                                    <span>تم التصميم والبرمجة بواسطة Eng.Mohamed Ahmed</span>
+                                </div>
+                            </div>
+                            <p class="text-center mb-0">
+                                هذا الموقع تم تصميمه وتطويره بعناية لخدمة المحتوى الإسلامي على الإنترنت.
+                                للاستفسارات أو طلبات التصميم، لا تتردد في التواصل.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- التذييل (Footer) -->
+    <footer class="text-center p-3 text-lg-start bg-body-tertiary text-muted">
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i> ريحــان
+              </h6>
+              <p>
+                مرحبًا بكم في ريحان — منصتكم الإسلامية التي تجمع بين المعرفة، الإلهام، والمحتوى الموثوق في مكان واحد.
+              </p>
+              <div class="mt-4">
+                <a href="#" class="text-reset me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a href="#" class="text-reset me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="#" class="text-reset me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="#" class="text-reset"><i class="fab fa-youtube fa-lg"></i></a>
+              </div>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">روابط مهمة</h6>
+              <div class="footer-links">
+                <p><a href="index.html" class="text-reset">الصفحة الرئيسية</a></p>
+                <p><a href="#prayer-times" class="text-reset">أوقات الصلاة</a></p>
+                <p><a href="#quran-player" class="text-reset">مشغل القرآن</a></p>
+                <p><a href="#tasbeeh" class="text-reset">عداد التسبيح</a></p>
+                <p><a href="privacy.html" class="text-reset">سياسة الخصوصية</a></p>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">تواصل معنا</h6>
+              <p><i class="fas fa-home me-3"></i> القاهرة، مصر</p>
+              <p><i class="fas fa-envelope me-3"></i> info@rehan.com</p>
+              <p><i class="fas fa-phone me-3"></i> +20 100 000 0000</p>
+              <p><i class="fas fa-print me-3"></i> +20 100 000 0001</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="text-center p-4 copyright">
+        © 2025 جميع الحقوق محفوظة: ريحــان | تم التصميم والبرمجة بواسطة Eng.Mohamed Ahmed
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- ملف السكربت الخارجي -->
+    <script src="script.js"></script>
+</body>
+</html>

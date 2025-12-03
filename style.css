@@ -1,0 +1,500 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f8f9fa;
+    line-height: 1.8;
+    color: #333;
+}
+
+:root {
+    --primary-color: #2e7d32;
+    --secondary-color: #1b5e20;
+    --accent-color: #4caf50;
+    --light-color: #f1f8e9;
+    --dark-color: #1a237e;
+    --gold-color: #D4AF37;
+}
+
+.navbar {
+    background-color: white !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.nav-link {
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #333 !important;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: var(--primary-color) !important;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 50px;
+    margin-left: 10px;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), 
+                url('https://images.unsplash.com/photo-1519141487489-e4d7c75bb1e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0 80px;
+    border-radius: 0 0 30px 30px;
+    margin-top: 76px;
+}
+
+.hero-title {
+    color: var(--secondary-color);
+    font-weight: 800;
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.hero-subtitle {
+    color: #555;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 12px 35px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    width: 120px;
+    height: 5px;
+    background: linear-gradient(to right, var(--primary-color), var(--gold-color));
+    border-radius: 5px;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    padding: 35px 25px;
+    height: 100%;
+    transition: transform 0.4s, box-shadow 0.4s;
+    border-top: 5px solid var(--primary-color);
+    overflow: hidden;
+    position: relative;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to left, var(--primary-color), var(--gold-color));
+}
+
+.feature-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.1);
+}
+
+.feature-title {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+/* قسم أوقات الصلاة */
+
+.prayer-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.city-selector {
+    max-width: 400px;
+    margin: 0 auto 40px;
+}
+
+.city-selector select {
+    border-radius: 50px;
+    padding: 15px 20px;
+    border: 2px solid var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.city-selector select:focus {
+    box-shadow: 0 0 0 0.25rem rgba(46, 125, 50, 0.25);
+    outline: none;
+}
+
+.prayer-times-container {
+    background-color: white;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    margin-top: 20px;
+}
+
+.prayer-time-card {
+    background: linear-gradient(135deg, #f8f9fa, #e8f5e9);
+    border-radius: 15px;
+    padding: 25px 15px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.prayer-time-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+}
+
+.prayer-time-card.current {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+.prayer-time-card.current .prayer-name,
+.prayer-time-card.current .prayer-time-value,
+.prayer-time-card.current .prayer-icon {
+    color: white;
+}
+
+.prayer-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.prayer-name {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.prayer-time-value {
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    direction: ltr;
+    display: inline-block;
+}
+
+.prayer-time-remaining {
+    font-size: 0.9rem;
+    color: #eee;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.current-prayer-indicator {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.date-display {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.hijri-date {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.gregorian-date {
+    color: #666;
+}
+
+/* آية اليوم */
+
+.quran-verse {
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px 40px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    border-right: 8px solid var(--gold-color);
+    font-size: 1.6rem;
+    line-height: 2.2;
+    text-align: center;
+    position: relative;
+}
+
+.quran-verse::before {
+    content: "﴿";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2.5rem;
+    color: var(--gold-color);
+}
+
+.quran-verse::after {
+    content: "﴾";
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 2.5rem;
+    color: var(--gold-color);
+}
+
+.verse-reference {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-top: 25px;
+    font-size: 1.2rem;
+}
+
+/* قسم الكعبة */
+
+.kaaba-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px 0;
+    color: white;
+    border-radius: 20px;
+    margin: 50px 0;
+}
+
+.kaaba-title {
+    font-weight: 800;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.kaaba-text {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* معلومات المصمم */
+
+.designer-info {
+    background: linear-gradient(135deg, #f5f5f5, #e8f5e9);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-right: 5px solid var(--gold-color);
+}
+
+.designer-title {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.designer-contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.designer-contact i {
+    color: var(--primary-color);
+    margin-left: 10px;
+    font-size: 1.3rem;
+    width: 25px;
+}
+
+/* مشغل القرآن */
+
+.quran-player-section {
+    background-color: #f8f9fa;
+}
+
+.quran-player-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 25px 25px 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    border-right: 5px solid var(--primary-color);
+}
+
+.quran-audio-wrapper audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* عداد التسبيح */
+
+.tasbeeh-section {
+    background-color: #f1f8e9;
+}
+
+.tasbeeh-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    border-right: 5px solid var(--accent-color);
+}
+
+.tasbeeh-count {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+/* التذييل */
+
+footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.3s, transform 0.3s;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+    transform: translateX(-5px);
+}
+
+.copyright {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef, #f8f9fa);
+    color: #666;
+    font-size: 0.95rem;
+    padding: 20px;
+    border-top: 1px solid #dee2e6;
+}
+
+/* فورم البحث */
+
+.form-control {
+    border-radius: 50px;
+    padding: 12px 20px;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(46, 125, 50, 0.25);
+}
+
+.btn-outline-success {
+    border-radius: 50px;
+    padding: 12px 25px;
+    border-width: 2px;
+}
+
+/* ريسبونсив */
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .navbar-brand img {
+        height: 40px;
+    }
+    
+    .quran-verse {
+        font-size: 1.3rem;
+        padding: 30px 20px;
+    }
+    
+    .prayer-time-value {
+        font-size: 1.8rem;
+    }
+}
